@@ -1,50 +1,60 @@
+
 <form action="process.php" method="post">
-    <p>Please Register</p>
-    <label for="first_name">First Name:</label>
-    <input type="text" id="first_name" name="first_name">
-    <p>
-    <label for="last_name">Last Name:</label>
-    <input type="text" id="last_name" name="last_name">
-    </p>
-    <p>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email">
-    </p>
-    <p>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-    </p>
-    <p><label for="pw_confirm">Password Confirmation:</label>
-        <input type="password" id="pw_confirm" name="password_confirmation">
-    </p>
-    <p>
-        <label for="mm/dd/yyyy">Birthday:</label>
-        <input type="date" id="mm/dd/yyyy" name="Birthday">
-    <img src="CAL.png" alt="Calendar Icon" height=15 width=24>
-    </p>
+    <h3>Please Register</h3><table>
+    <tr>
+        <td><label for="first_name">First Name:</label></td>
+        <td><input type="text" id="first_name" name="first_name"></td>
+    </tr>   
+    <tr>
+        <td><label for="last_name">Last Name:</label></td>
+        <td><input type="text" id="last_name" name="last_name"></td>
+    </tr> 
+    <tr>
+    <td><label for="email">Email:</label></td>
+    <td><input type="text" id="email" name="email"></td>
+    </tr>
+    <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" id="password" name="password"></td>
+    </tr>
+    <tr>
+        <td><label for="pw_confirm">Password Confirmation:</label></td>
+        <td><input type="password" id="pw_confirm" name="password_confirmation"></td>
+    </tr>
+    
+        <tr>
+        <td><label for="mm/dd/yyyy">Birthday:</label></td>
+        <td><input type="date" id="mm/dd/yyyy" name="Birthday"></td>
+        <td><img src="CAL.png" alt="Calendar Icon" height=12 width=24></td>
+    </tr>
+    </table>
     <p>Select your gender:</p>
+    
+    
     <label for="male">Male</label>
     <input type="radio" id="male" name="gender" value="male">
-   
+    
     <label for="female">Female</label>
     <input type="radio" id="female" name="gender" value="female">
     
     <label for="decline">Other</label>
     <input type="radio" id="decline" name="gender" value="decline">
-   
     
-    <p>A short description about yourself:</p>
+    
+    <p> A short description about yourself:</p>
     <textarea name="description"></textarea>
+   
+
     
-    <p>
-        Favorite Language
-    <select name="language">
+        <p>Favorite Language</p>
+        <select name="language">
         <option value="male">Java Script</option>
         <option value="female">HTML</option>
         <option value="decline">Elvish</option>
     </select>
-    </p>
     
-   
-   <input type="submit" value="Submit">
+    
+
+   <p><input type="submit" value="Submit"></p>
+
 </form>
